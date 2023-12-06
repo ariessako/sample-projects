@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: deepskyblue;
+}
+
+.form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    width: 260px;
+    height: 300px;
+    border-radius: 3px;
+}
+
+.form input{
+    border : 1px solid gray;
+    transform: translateY(80px);
+    display: block;
+    margin: 10px auto 0px auto;
+    height: 35px;
+    width: 80%;
+    padding-left: 10px;
+}
+
+.form input[type="submit"]{
+    background: deepskyblue;
+    width: 77%;
+    color: white;
+    border: none;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+::placeholder{
+    padding-left: 8px;
+}
+
+.title{
+    transform: translate(30px,40px);
+    
+}
+
+.title p{
+    color: darkturquoise;
+    font-size: large;
+    text-align: left;
+}
