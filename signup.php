@@ -29,12 +29,9 @@
                 $password = $_POST['password'];
                 $confirmPassword = $_POST['confirmPassword'];
                 echo $name;
-            //    if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'])){
-            //     if($password == $confirmPassword){
-                
                 
                 $sql = "INSERT INTO account (email, username, pass)
-                VALUES ('john@example.com', 'Doe', '21')";
+                VALUES ('$email', '$name', '$password')";
                 
                 if ($conn->query($sql) === TRUE) {
                   echo "New record created successfully";

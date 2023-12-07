@@ -13,9 +13,10 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-
+    $dbname = "school_directory";
+    
     // Create connection
-    $conn = new mysqli($servername, $username, $password);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
     // Check connection
     if ($conn->connect_error) {
